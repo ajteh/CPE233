@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../CPE233.srcs/sources_1/new/ALU.sv" \
+"../../../../CPE233.srcs/sources_1/new/C.sv" \
+"../../../../CPE233.srcs/sources_1/new/Control_Unit.sv" \
+"../../../../CPE233.srcs/sources_1/new/Mux2.sv" \
+"../../../../CPE233.srcs/sources_1/new/Mux4.sv" \
+"../../../../CPE233.srcs/sources_1/new/ProgRom.sv" \
+"../../../../CPE233.srcs/sources_1/new/ProgramCounter.sv" \
+"../../../../CPE233.srcs/sources_1/new/RAT_MCU.sv" \
+"../../../../CPE233.srcs/sources_1/new/REG_FILE.sv" \
+"../../../../CPE233.srcs/sources_1/new/Z.sv" \
+"../../../../CPE233.srcs/sim_1/new/MCU SIM.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

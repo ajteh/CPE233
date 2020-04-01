@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../RAT.srcs/sources_1/imports/new/BCD.sv" \
+"../../../../RAT.srcs/sources_1/imports/new/CathodeDriver.sv" \
+"../../../../RAT.srcs/sources_1/new/IntFSM.sv" \
+"../../../../RAT.srcs/sources_1/new/KeyPad.sv" \
+"../../../../RAT.srcs/sources_1/new/KeyPadClkDiv.sv" \
+"../../../../RAT.srcs/sources_1/new/KeyPadDecode.sv" \
+"../../../../RAT.srcs/sources_1/new/KeyPadFSM.sv" \
+"../../../../RAT.srcs/sources_1/new/KeyPadRegister.sv" \
+"../../../../RAT.srcs/sources_1/imports/new/SevSegDisp.sv" \
+"../../../../RAT.srcs/sim_1/new/KeyPadSim.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

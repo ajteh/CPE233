@@ -1,0 +1,769 @@
+
+*** Running vivado
+    with args -log RAT_WRAPPER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAT_WRAPPER.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RAT_WRAPPER.tcl -notrace
+Command: synth_design -top RAT_WRAPPER -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.883 ; gain = 99.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RAT_WRAPPER' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/RAT_WRAPPER.sv:15]
+	Parameter SWITCHES_ID bound to: 8'b00100000 
+	Parameter KEYBOARD_ID bound to: 8'b01000100 
+	Parameter LEDS_ID bound to: 8'b01000000 
+	Parameter SSEG0_ID bound to: 8'b10000001 
+	Parameter SSEG1_ID bound to: 8'b10000010 
+	Parameter SPEAKER_ID bound to: 8'b10010000 
+INFO: [Synth 8-6157] synthesizing module 'RAT_MCU' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/RAT_MCU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:23]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4' (1#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgramCounter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgramCounter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgRom' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgRom.sv:21]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed | block}" *) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgRom.sv:29]
+INFO: [Synth 8-3876] $readmem data file 'TESTY.mem' is read successfully [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgRom.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'ProgRom' (3#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgRom.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'REG_FILE' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/REG_FILE.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'REG_FILE' (4#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/REG_FILE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4__parameterized0' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4__parameterized0' (4#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2' (5#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized0' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized0' (5#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SCR_ADDR_MUX' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SCR_ADDR_MUX.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCR_ADDR_MUX' (6#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SCR_ADDR_MUX.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Flags' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/Flags.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'C' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/C.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'C' (8#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/C.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Z' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Z.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Z' (9#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Z.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SHAD_C' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SHAD_C.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SHAD_C' (10#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SHAD_C.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SHAD_Z' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SHAD_Z.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SHAD_Z' (11#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/SHAD_Z.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized1' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized1' (11#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Flags' (12#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/Flags.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SCRATCH_RAM' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/SCRATCH_RAM.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCRATCH_RAM' (13#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/SCRATCH_RAM.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'StackPointer' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/StackPointer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'StackPointer' (14#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/StackPointer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'I' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/I.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'I' (15#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/I.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Control_Unit.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Control_Unit.sv:111]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Control_Unit.sv:73]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (16#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/Control_Unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAT_MCU' (17#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/RAT_MCU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSegDisp' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/SevSegDisp.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/BCD.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (18#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/BCD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CathodeDriver' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:19]
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:41]
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:44]
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:66]
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:88]
+INFO: [Synth 8-226] default block is never used [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:110]
+INFO: [Synth 8-6155] done synthesizing module 'CathodeDriver' (19#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/CathodeDriver.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'SevSegDisp' (20#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/SevSegDisp.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDriver' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:91]
+	Parameter BREAKKEY bound to: 8'b11110000 
+	Parameter SHIFT1 bound to: 8'b00010010 
+	Parameter SHIFT2 bound to: 8'b01011001 
+	Parameter CAPS bound to: 8'b01011000 
+	Parameter ST_lowercase bound to: 3'b000 
+	Parameter ST_ignore_break bound to: 3'b001 
+	Parameter ST_shift bound to: 3'b010 
+	Parameter ST_ignore_shift_break bound to: 3'b011 
+	Parameter ST_capslock bound to: 3'b100 
+	Parameter ST_ignore_caps_break bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:232]
+	Parameter IDLE bound to: 1'b0 
+	Parameter RX bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (21#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:232]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:148]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (22#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDriver' (23#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/KeyboardDriver.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'ModeDecode' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/ModeDecode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ModeDecode' (24#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/ModeDecode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SpeakerTop' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/Speaker.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Frequency_Decoder' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/FrequencyDecoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Frequency_Decoder' (25#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/FrequencyDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clockdivider' [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/ClockDivider.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider' (26#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/ClockDivider.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SpeakerTop' (27#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/Speaker.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAT_WRAPPER' (28#1) [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/RAT_WRAPPER.sv:15]
+WARNING: [Synth 8-3331] design RAT_WRAPPER has unconnected port BTNL
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.906 ; gain = 154.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 412.906 ; gain = 154.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 412.906 ; gain = 154.621
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/constrs_1/imports/new/BasysConstraints.xdc]
+Finished Parsing XDC File [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/constrs_1/imports/new/BasysConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/constrs_1/imports/new/BasysConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RAT_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RAT_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 753.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element PROG_IR_reg was removed.  [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgRom.sv:38]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ALU.sv:35]
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/new/StackPointer.sv:35]
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'Control_Unit'
+INFO: [Synth 8-5546] ROM "I_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_OPY_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_INCR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_DECR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_WE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_DATA_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_C_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_C_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_LD_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IO_STRB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_WR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PC_MUX_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_ADDR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "FLG_SHAD_LD" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PC_INC" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RST" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_done_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'keyboard'
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "caps_num_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "letter_case" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'StateReg_reg' in module 'KeyboardDriver'
+INFO: [Synth 8-5544] ROM "intrptCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "INTRPT" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "StateReg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StateReg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_LEDS" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_INIT |                             0001 | 00000000000000000000000000000010
+                ST_FETCH |                             0010 | 00000000000000000000000000000000
+              ST_EXECUTE |                             0100 | 00000000000000000000000000000001
+               INTERRUPT |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'one-hot' in module 'Control_Unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            ST_lowercase |                           000001 |                              000
+                ST_shift |                           000010 |                              010
+   ST_ignore_shift_break |                           000100 |                              011
+             ST_capslock |                           001000 |                              100
+    ST_ignore_caps_break |                           010000 |                              101
+         ST_ignore_break |                           100000 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'keyboard'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                                0 | 00000000000000000000000000000000
+               ST_INTRPT |                                1 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StateReg_reg' using encoding 'sequential' in module 'KeyboardDriver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 35    
+	   2 Input      3 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  16 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  19 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 1     
+	  48 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 32    
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	  48 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	  48 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAT_WRAPPER 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module Mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProgRom 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Mux4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module Mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module Mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module SCR_ADDR_MUX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Muxes : 
+	  16 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module C 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Z 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SHAD_C 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SHAD_Z 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module StackPointer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module I 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Control_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  48 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	  48 Input      2 Bit        Muxes := 2     
+	  48 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 16    
+Module BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 34    
+	   2 Input      3 Bit       Adders := 7     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 30    
+	   2 Input      3 Bit        Muxes := 4     
+Module CathodeDriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  19 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module SevSegDisp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+Module KeyboardDriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ModeDecode 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module clockdivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "MCU/ALU/Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/ALU_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SCR_ADDR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/PC_MUX_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/RF_WR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/IO_STRB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/FLG_LD_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/FLG_C_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/FLG_C_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SCR_DATA_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SCR_WE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SP_DECR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SP_INCR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/SP_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/ALU_OPY_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/I_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MCU/controlunit_inst/I_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "KEYBD/keybd/caps_num_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "KEYBD/keybd/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O750" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_LEDS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O800" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element MCU/ProgramCounter/PC_COUNT_reg_rep was removed.  [D:/Documents/DigitalDesign/CPE233/RAT/RAT.srcs/sources_1/imports/new/ProgramCounter.sv:33]
+WARNING: [Synth 8-3331] design RAT_WRAPPER has unconnected port BTNL
+WARNING: [Synth 8-3332] Sequential element (KEYBD/keybd/ps2_rx_unit/d_reg_reg[0]) is unused and will be removed from module RAT_WRAPPER.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+-------------------------------------+---------------+----------------+
+|Module Name       | RTL Object                          | Depth x Width | Implemented As | 
++------------------+-------------------------------------+---------------+----------------+
+|ProgRom           | PROG_IR_reg                         | 1024x18       | Block RAM      | 
+|Control_Unit      | FLG_Z_LD                            | 128x1         | LUT            | 
+|Control_Unit      | FLG_C_LD                            | 128x1         | LUT            | 
+|Control_Unit      | RF_WR                               | 128x1         | LUT            | 
+|Frequency_Decoder | decode                              | 1024x19       | LUT            | 
+|RAT_WRAPPER       | MCU/ProgramCounter/PC_COUNT_reg_rep | 1024x18       | Block RAM      | 
+|RAT_WRAPPER       | MCU/controlunit_inst/FLG_Z_LD       | 128x1         | LUT            | 
+|RAT_WRAPPER       | MCU/controlunit_inst/FLG_C_LD       | 128x1         | LUT            | 
+|RAT_WRAPPER       | MCU/controlunit_inst/RF_WR          | 128x1         | LUT            | 
+|RAT_WRAPPER       | Speaker/Frequency/decode            | 1024x19       | LUT            | 
++------------------+-------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------+-----------+----------------------+------------------+
+|RAT_WRAPPER | MCU/SCRATCH_RAM/SCR_RAM_reg | Implied   | 256 x 10             | RAM256X1S x 10   | 
+|RAT_WRAPPER | MCU/REG_FILE/RAM_reg        | Implied   | 32 x 8               | RAM32X1D x 8     | 
++------------+-----------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_4/MCU/ProgramCounter/PC_COUNT_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 753.547 ; gain = 495.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 762.574 ; gain = 504.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------+-----------+----------------------+------------------+
+|RAT_WRAPPER | MCU/SCRATCH_RAM/SCR_RAM_reg | Implied   | 256 x 10             | RAM256X1S x 10   | 
+|RAT_WRAPPER | MCU/REG_FILE/RAM_reg        | Implied   | 32 x 8               | RAM32X1D x 8     | 
++------------+-----------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'MCU/ProgRom/PROG_IR_reg_rep_bsel[7]' (FD) to 'MCU/ProgRom/PROG_IR_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MCU/ProgRom/PROG_IR_reg_rep_bsel[6]' (FD) to 'MCU/ProgRom/PROG_IR_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MCU/ProgRom/PROG_IR_reg_rep_bsel[5]' (FD) to 'MCU/ProgRom/PROG_IR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MCU/ProgRom/PROG_IR_reg_rep_bsel[4]' (FD) to 'MCU/ProgRom/PROG_IR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MCU/ProgRom/PROG_IR_reg_rep_bsel[3]' (FD) to 'MCU/ProgRom/PROG_IR_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSG_DISP/CathMod/CATHODES_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (SSG_DISP/CathMod/CATHODES_reg[7]) is unused and will be removed from module RAT_WRAPPER.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    29|
+|3     |LUT1       |     7|
+|4     |LUT2       |    38|
+|5     |LUT3       |    50|
+|6     |LUT4       |    89|
+|7     |LUT5       |    93|
+|8     |LUT6       |   190|
+|9     |MUXF7      |    33|
+|10    |MUXF8      |     8|
+|11    |RAM256X1S  |    10|
+|12    |RAM32X1D   |     8|
+|13    |RAMB18E1_1 |     1|
+|14    |FDRE       |   154|
+|15    |FDSE       |     1|
+|16    |IBUF       |    12|
+|17    |OBUF       |    22|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------+------+
+|      |Instance             |Module            |Cells |
++------+---------------------+------------------+------+
+|1     |top                  |                  |   748|
+|2     |  Decode             |ModeDecode        |     4|
+|3     |  KEYBD              |KeyboardDriver    |   130|
+|4     |    keybd            |keyboard          |    83|
+|5     |      ps2_rx_unit    |ps2_rx            |    64|
+|6     |  MCU                |RAT_MCU           |   324|
+|7     |    ALU              |ALU               |    36|
+|8     |    Flags            |Flags             |     4|
+|9     |      C_Flag         |C                 |     1|
+|10    |      SHAD_C         |SHAD_C            |     1|
+|11    |      SHAD_Z         |SHAD_Z            |     1|
+|12    |      Z_Flag         |Z                 |     1|
+|13    |    I                |I                 |     1|
+|14    |    ProgramCounter   |ProgramCounter    |   196|
+|15    |    REG_FILE         |REG_FILE          |    35|
+|16    |    SCRATCH_RAM      |SCRATCH_RAM       |    10|
+|17    |    SP               |StackPointer      |    23|
+|18    |    controlunit_inst |Control_Unit      |    19|
+|19    |  SSG_DISP           |SevSegDisp        |    59|
+|20    |    CathMod          |CathodeDriver     |    59|
+|21    |  Speaker            |SpeakerTop        |   176|
+|22    |    Frequency        |Frequency_Decoder |   133|
+|23    |    clockdivider     |clockdivider      |    43|
++------+---------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 771.113 ; gain = 172.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 771.113 ; gain = 512.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 771.113 ; gain = 525.836
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/DigitalDesign/CPE233/RAT/RAT.runs/synth_1/RAT_WRAPPER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RAT_WRAPPER_utilization_synth.rpt -pb RAT_WRAPPER_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 771.113 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 11:15:55 2019...

@@ -1,0 +1,6 @@
+.CSEG
+.ORG 0X10
+
+
+MOV R1,0X80
+ASR R1

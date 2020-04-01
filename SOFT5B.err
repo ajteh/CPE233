@@ -1,0 +1,18 @@
+ERROR # 1:  line# (0031): MOV     
+                  "LOOP:	MOV R6,START"
+
+ERROR # 2:  line# (0033): BRN label "COMPARE" has not been defined!    
+                  "		BRN COMPARE"
+
+ERROR # 3:  line# (0038): BRCC label "COMPARE" has not been defined!    
+                  "		BRCC COMPARE"
+
+ERROR # 4:  line# (0041): CMP label "COMPARE" has not been defined!    
+                  "		CMP R12,ARRAY_SIZE"
+
+ERROR # 5:  line# (0047): MOV label "COMPARE" has not been defined!    
+                  "RESET:  MOV R10,START"
+
+ERROR # 6:  line# (0049): CMP label "COMPARE" has not been defined!    
+                  "		CMP R10, ARRAY_SIZE"
+

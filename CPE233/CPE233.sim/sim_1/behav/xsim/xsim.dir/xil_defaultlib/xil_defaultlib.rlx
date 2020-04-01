@@ -1,0 +1,16 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sim_1/new/MCU SIM.sv,1549928842,systemVerilog,,,,MCU_SIM,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/ALU.sv,1549599226,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/C.sv,,ALU,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/C.sv,1549576489,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Control_Unit.sv,,C,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Control_Unit.sv,1550258030,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Mux2.sv,,Control_Unit,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Mux2.sv,1550258331,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Mux4.sv,,Mux2,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Mux4.sv,1549615904,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/ProgRom.sv,,Mux4,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/ProgRom.sv,1549928468,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/ProgramCounter.sv,,ProgRom,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/ProgramCounter.sv,1547492247,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/RAT_MCU.sv,,ProgramCounter,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/RAT_MCU.sv,1550042507,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/REG_FILE.sv,,RAT_MCU,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/REG_FILE.sv,1549650002,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Z.sv,,REG_FILE,,,,,,,,
+D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sources_1/new/Z.sv,1549483239,systemVerilog,,D:/Documents/DigitalDesign/CPE233/CPE233/CPE233.srcs/sim_1/new/MCU SIM.sv,,Z,,,,,,,,
